@@ -25,6 +25,7 @@ RUN echo $'server { \n\
   } \n\
   \n\
   location /api/ { \n\
+  client_max_body_size 128m; \n\
   proxy_buffer_size 128k; \n\
   proxy_buffers 16 32k; \n\
   proxy_busy_buffers_size 128k; \n\
